@@ -11,11 +11,9 @@ def play_video(out_video):
 
 
 def get_info():
-    customize = input("Would you like to customize file names and text overlay (y/n): ")
-
     input_video, output_video, text_overlay = "testVideo.mp4", "testVideoOverlay.mp4", "This is a test."
 
-    if customize == 'y':
+    if input("Would you like to customize file names and text overlay (y/n): ") == 'y':
         input_video = input("Enter the name of your input file: ")
         output_video = input("Enter the name of your output file: ")
         text_overlay = input("Enter the text to be displayed: ")
