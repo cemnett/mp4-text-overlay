@@ -11,7 +11,7 @@ def play_video(out_video):
 
 
 def get_info():
-    customize = input("Would you like to customize file names and text overlay (y/n):   ")
+    customize = input("Would you like to customize file names and text overlay (y/n): ")
 
     input_video, output_video, text_overlay = "testVideo.mp4", "testVideoOverlay.mp4", "This is a test."
 
@@ -25,7 +25,7 @@ def get_info():
 
 if __name__ == '__main__':
     while True:
-        cmd = input("Enter m to modify the video, p to play the video, b to modify AND play, or q to quit:   ")
+        cmd = input("Enter m to modify the video, p to play the video, b to modify AND play, or q to quit: ")
         if cmd == "q":
             break
         elif cmd == "m":
